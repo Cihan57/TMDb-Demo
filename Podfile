@@ -8,5 +8,6 @@ target 'TMDb-Demo' do
   # Pods for TMDb-Demo
 
     pod 'Moya', '~> 15.0'
+    pod 'JGProgressHUD' , '~> 2.2'
 
 end

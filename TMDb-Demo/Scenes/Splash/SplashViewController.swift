@@ -24,7 +24,12 @@ final class SplashViewController: UIViewController {
     
     func goMovies(){
         let vc = MovieListBuilder.make()
-        self.present(vc, animated: true, completion: nil)
+        window?.rootViewController = vc
+        window?.makeKeyAndVisible()
+        UIView.transition(with: window!, duration: 0.5, options: .transitionCrossDissolve, animations: nil, completion: nil)
+        
     }
+    
+    
     
 }
