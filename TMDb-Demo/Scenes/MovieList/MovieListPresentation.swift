@@ -12,11 +12,13 @@ final class MovieListPresentation: NSObject {
     let title: String
     let overview: String
     let posterPath: String
+    let releaseDate: String
     
-    init(title: String, overview: String, posterPath: String) {
+    init(title: String, overview: String, posterPath: String, releaseDate: String) {
         self.title = title
         self.overview = overview
         self.posterPath = posterPath
+        self.releaseDate = releaseDate
         super.init()
     }
     
@@ -25,6 +27,7 @@ final class MovieListPresentation: NSObject {
         return self.title == other.title &&
         self.overview == other.overview &&
         self.posterPath == other.posterPath
+        self.releaseDate == other.releaseDate
     }
 }
 
@@ -33,6 +36,7 @@ extension MovieListPresentation {
     convenience init(movie: Movie) {
         self.init(title: movie.title,
                   overview: movie.overview,
-                  posterPath: movie.posterPath)
+                  posterPath: movie.posterPath,
+                  releaseDate: movie.releaseDate)
     }
 }

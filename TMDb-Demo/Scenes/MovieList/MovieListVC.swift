@@ -12,9 +12,8 @@ final class MovieListVC: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     
-    let hud = JGProgressHUD()
-    
     var viewModel = MovieListViewModel()
+    let hud = JGProgressHUD()
     
     private var movieList: [MovieListPresentation] = []
     
@@ -62,6 +61,7 @@ extension MovieListVC: UITableViewDataSource {
             let movie = movieList[indexPath.row]
             cell.titleLabel.text = movie.title
             cell.owerviewLabel.text = movie.overview
+            cell.dateLabel.text = Utils.formattedDateFromString(dateString: movie.releaseDate, withFormat: "dd.MM.yyyy")
             cell.postImageURL = String(format: "https://image.tmdb.org/t/p/original%@", movie.posterPath)
             return cell
         }
