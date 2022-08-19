@@ -14,6 +14,23 @@ class MovieCell: UITableViewCell {
     @IBOutlet weak var owerviewLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     
+    var postImageURL: String? {
+        didSet {
+            if let url = postImageURL {
+                self.movieImageView.image = UIImage(named: "loading")
+                
+                UIImage.loadImageUsingCacheWithUrlString(url) { image in
+                    // set the image only when we are still displaying the content for the image we finished downloading
+                    if url == self.postImageURL {
+                        self.movieImageView.image = image
+                    }
+                }
+            }
+            else {
+                self.movieImageView.image = nil
+            }
+        }
+    }
     
     static let identifier = "MovieCell"
     

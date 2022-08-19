@@ -9,5 +9,6 @@ target 'TMDb-Demo' do
 
     pod 'Moya', '~> 15.0'
     pod 'JGProgressHUD' , '~> 2.2'
+    pod 'Kingfisher', '~> 7.0'
 
 end

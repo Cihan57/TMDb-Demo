@@ -26,12 +26,6 @@ final class MovieListVC: UIViewController {
         tableView.register(MovieCell.nib(), forCellReuseIdentifier: MovieCell.identifier)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        
-    }
-    
 }
 
 extension MovieListVC: MovieListViewModelDelegate {
@@ -68,7 +62,7 @@ extension MovieListVC: UITableViewDataSource {
             let movie = movieList[indexPath.row]
             cell.titleLabel.text = movie.title
             cell.owerviewLabel.text = movie.overview
-            
+            cell.postImageURL = String(format: "https://image.tmdb.org/t/p/original%@", movie.posterPath)
             return cell
         }
         

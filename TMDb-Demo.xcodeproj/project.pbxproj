@@ -36,6 +36,7 @@
 		869A742D28ABC89B00E3BB3B /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869A742C28ABC89B00E3BB3B /* MovieListViewModel.swift */; };
 		869A742F28ABCCD900E3BB3B /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869A742E28ABCCD900E3BB3B /* MovieDetailViewModel.swift */; };
 		869A743128ABCD1000E3BB3B /* MovieDetailPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869A743028ABCD1000E3BB3B /* MovieDetailPresentation.swift */; };
+		86BFC65128AFD9730057A3C4 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BFC65028AFD9730057A3C4 /* UIImage+Ext.swift */; };
 		AE555057BB74ECF142F4006B /* Pods_TMDb_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116FA7D2056028A783FE6B86 /* Pods_TMDb_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		869A742C28ABC89B00E3BB3B /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		869A742E28ABCCD900E3BB3B /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
 		869A743028ABCD1000E3BB3B /* MovieDetailPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresentation.swift; sourceTree = "<group>"; };
+		86BFC65028AFD9730057A3C4 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		CD63CE3D8B0ADAE3FFDEB6A5 /* Pods-TMDb-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDb-Demo.release.xcconfig"; path = "Target Support Files/Pods-TMDb-Demo/Pods-TMDb-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,6 +187,7 @@
 			children = (
 				868C1A1B28AB932B005388EF /* UIViewController+Ext.swift */,
 				868EFC1128AF7B66002FFDA1 /* UIView+Ext.swift */,
+				86BFC65028AFD9730057A3C4 /* UIImage+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				869A742728ABC7F500E3BB3B /* MovieDetailVC.swift in Sources */,
 				868C1A0128AA9DE6005388EF /* AppContainer.swift in Sources */,
 				868C19EC28AA9C36005388EF /* AppDelegate.swift in Sources */,
+				86BFC65128AFD9730057A3C4 /* UIImage+Ext.swift in Sources */,
 				869A742F28ABCCD900E3BB3B /* MovieDetailViewModel.swift in Sources */,
 				864B4B9E28AF620000165C0F /* UrlConstants.swift in Sources */,
 				868C1A1C28AB932B005388EF /* UIViewController+Ext.swift in Sources */,
