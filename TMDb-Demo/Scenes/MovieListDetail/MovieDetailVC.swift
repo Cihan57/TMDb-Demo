@@ -6,11 +6,16 @@
 //
 
 import UIKit
+import Kingfisher
 
 final class MovieDetailVC: UIViewController {
     
-    @IBOutlet private weak var originalTitle: UILabel!
-    @IBOutlet private weak var owerviewLabel: UILabel!
+    @IBOutlet weak var movieImageView: UIImageView!
+    @IBOutlet weak var ratingLabel: UILabel!
+    @IBOutlet weak var circleView: UIView!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var originalTitle: UILabel!
+    @IBOutlet weak var owerviewTextView: UITextView!
     
     var viewModel: MovieDetailViewModelProtocol!
     
@@ -18,21 +23,18 @@ final class MovieDetailVC: UIViewController {
         super.viewDidLoad()
         viewModel.delegate = self
         viewModel.load()
+        
+        circleView.makeRounded()
     }
 }
 
 extension MovieDetailVC: MovieDetailViewModelDelegate {
     
     func showDetail(_ presentation: MovieDetailPresentation) {
-        originalTitle.text = presentation.originalTitle
-        owerviewLabel.text = presentation.owerview
+        movieImageView.kf.setImage(with: URL(string: String(format: "https://image.tmdb.org/t/p/original%@",presentation.posterPath)))
+        ratingLabel.text = String(presentation.voteAverage) + "/10"
+        dateLabel.text = Utils.formattedDateFromString(dateString: presentation.releaseDate, withFormat: "dd.MM.yyyy")
+        originalTitle.text = presentation.title
+        owerviewTextView.text = presentation.owerview
     }
 }
-
-
-
-//let backdropPath: String
-//let voteAverage: Double
-//let releaseDate: String
-//let originalTitle: String
-//let owerview: String

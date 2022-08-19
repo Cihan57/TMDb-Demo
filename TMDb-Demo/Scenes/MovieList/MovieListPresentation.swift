@@ -26,7 +26,7 @@ final class MovieListPresentation: NSObject {
         guard let other = object as? MovieListPresentation else { return false }
         return self.title == other.title &&
         self.overview == other.overview &&
-        self.posterPath == other.posterPath
+        self.posterPath == other.posterPath &&
         self.releaseDate == other.releaseDate
     }
 }

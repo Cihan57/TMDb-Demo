@@ -27,7 +27,6 @@ final class SplashViewController: UIViewController {
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
         UIView.transition(with: window!, duration: 0.5, options: .transitionCrossDissolve, animations: nil, completion: nil)
-        
     }
     
     

@@ -48,6 +48,10 @@ extension MovieListVC: MovieListViewModelDelegate {
     func navigate(to route: MovieListViewRoute) {
         switch route {
         case .detail(let viewModel):
+            /* NOTE:
+                Since we have the id and other information of the selected movie,
+                it was not necessary to go to the service again.
+            */
             let viewController = MovieDetailBuilder.make(with: viewModel)
             show(viewController, sender: nil)
         }

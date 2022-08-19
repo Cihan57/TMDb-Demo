@@ -8,20 +8,20 @@
 import UIKit
 
 struct MovieDetailPresentation: Equatable {
-    let backdropPath: String
+    let posterPath: String
     let voteAverage: Double
     let releaseDate: String
-    let originalTitle: String
+    let title: String
     let owerview: String
 }
 
 extension MovieDetailPresentation {
     
     init(movie: Movie) {
-        self.init(backdropPath: movie.backdropPath,
+        self.init(posterPath: movie.posterPath,
                   voteAverage: movie.voteAverage,
                   releaseDate: movie.releaseDate,
-                  originalTitle: movie.originalTitle,
+                  title: movie.title,
                   owerview: movie.overview)
     }
 }
