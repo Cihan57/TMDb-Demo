@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="136" id="KGk-i7-Jjw" customClass="MovieCell" customModule="TMDb_Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="436" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="436" height="145"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="om6-ZE-Vd7">
+                        <rect key="frame" x="16" y="20.5" width="104" height="104"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="104" id="Oa0-GJ-tLJ"/>
+                            <constraint firstAttribute="height" constant="104" id="iaX-8y-cdd"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Great Beauty (2013)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7S-N7-O5L">
+                        <rect key="frame" x="128" y="28.5" width="288" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="1QH-Tb-iKl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOM-4N-q9B">
+                        <rect key="frame" x="128" y="52.5" width="268" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="jXn-L6-E7t"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Jep Gambardella has seduced his way through the lavish…">
+                                <attributes>
+                                    <color key="NSColor" red="0.55294117647058827" green="0.59999999999999998" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="TrebuchetMS"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15.06.2021" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nC-hK-yFd">
+                        <rect key="frame" x="128" y="110.5" width="288" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="23T-Fj-X37"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="12"/>
+                        <color key="textColor" red="0.55294117647058827" green="0.59999999999999998" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="65y-74-x40">
+                        <rect key="frame" x="404" y="66.5" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="NlP-jh-VCc"/>
+                            <constraint firstAttribute="width" constant="12" id="vA8-mo-RjC"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="65y-74-x40" secondAttribute="trailing" constant="20" id="1kg-g7-Cgl"/>
+                    <constraint firstItem="65y-74-x40" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5EU-2P-h0L"/>
+                    <constraint firstItem="P7S-N7-O5L" firstAttribute="top" secondItem="om6-ZE-Vd7" secondAttribute="top" constant="8" id="5Pd-m1-2cF"/>
+                    <constraint firstItem="6nC-hK-yFd" firstAttribute="bottom" secondItem="om6-ZE-Vd7" secondAttribute="bottom" id="Bi3-7k-b00"/>
+                    <constraint firstAttribute="trailing" secondItem="P7S-N7-O5L" secondAttribute="trailing" constant="20" id="FIK-kj-1n8"/>
+                    <constraint firstItem="dOM-4N-q9B" firstAttribute="leading" secondItem="om6-ZE-Vd7" secondAttribute="trailing" constant="8" id="JI1-Iu-gc8"/>
+                    <constraint firstItem="om6-ZE-Vd7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NSy-jn-a7O"/>
+                    <constraint firstAttribute="trailing" secondItem="6nC-hK-yFd" secondAttribute="trailing" constant="20" id="Q6r-PP-KC6"/>
+                    <constraint firstAttribute="trailing" secondItem="dOM-4N-q9B" secondAttribute="trailing" constant="40" id="QaN-cb-Csr"/>
+                    <constraint firstItem="P7S-N7-O5L" firstAttribute="leading" secondItem="om6-ZE-Vd7" secondAttribute="trailing" constant="8" id="bcF-fO-ebu"/>
+                    <constraint firstItem="6nC-hK-yFd" firstAttribute="leading" secondItem="om6-ZE-Vd7" secondAttribute="trailing" constant="8" id="nKx-sR-y4n"/>
+                    <constraint firstItem="om6-ZE-Vd7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="rpF-S6-VLV"/>
+                    <constraint firstItem="dOM-4N-q9B" firstAttribute="centerY" secondItem="om6-ZE-Vd7" secondAttribute="centerY" id="yCA-75-wji"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="6nC-hK-yFd" id="xFn-GQ-QIy"/>
+                <outlet property="movieImageView" destination="om6-ZE-Vd7" id="CF3-1h-nHg"/>
+                <outlet property="owerviewLabel" destination="dOM-4N-q9B" id="ShB-8q-lxF"/>
+                <outlet property="titleLabel" destination="P7S-N7-O5L" id="dad-P1-yBM"/>
+            </connections>
+            <point key="canvasLocation" x="5.7971014492753632" y="156.36160714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow" width="12" height="12"/>
+    </resources>
+</document>
